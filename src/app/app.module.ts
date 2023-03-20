@@ -16,11 +16,6 @@ import { SignModule } from './modules/sign/sign.module';
 @NgModule({
   declarations: [
     AppComponent,
-    FooterComponent,
-    HeaderComponent,
-    HomeComponent,
-    OcrComponent,
-    SignComponent
   ],
   imports: [
     BrowserModule,
