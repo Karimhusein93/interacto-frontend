@@ -8,6 +8,11 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'interacto',
+    loadChildren: () =>
+      import('./modules/shared/shared.module').then((m)=>m.SharedModule),
+  },
+  {
     path: 'sign-recognition',
     loadChildren: () =>
       import('./modules/sign/sign.module').then((m)=>m.SignModule),
