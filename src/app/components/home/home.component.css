@@ -1,0 +1,19 @@
+.container{
+    width: 80%;
+    margin: auto;
+    height: 60px;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 2%;
+}
+.sign-recognition{
+    height: 600px;
+    width: 40vw;
+}
+.ocr-bills{
+    height: 600px;
+    width: 40vw;
+}

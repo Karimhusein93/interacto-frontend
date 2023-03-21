@@ -9,6 +9,8 @@ import { MatSidenavModule} from '@angular/material/sidenav';
 import { MatListModule} from '@angular/material/list'
 import { MatButtonModule} from '@angular/material/button';
 import { SharedRoutingModule } from './shared-routing.module';
+import { MatGridListModule } from '@angular/material/grid-list';
+import { FormsModule } from '@angular/forms'; 
 
 @NgModule({
   declarations: [FooterComponent,HeaderComponent],
@@ -20,7 +22,9 @@ import { SharedRoutingModule } from './shared-routing.module';
     MatSidenavModule,
     MatListModule,
     MatToolbarModule,
-    SharedRoutingModule
+    SharedRoutingModule,
+    MatGridListModule,
+    FormsModule
   ],
   exports:[FooterComponent,HeaderComponent]
 })

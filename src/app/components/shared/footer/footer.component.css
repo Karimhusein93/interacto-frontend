@@ -1,0 +1,19 @@
+.container{
+    width: 80%;
+    margin: auto;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.social-icons{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    padding-left: 0px;
+}
+footer{
+    background-color: #47d7ac;
+    color: #13294b;
+}
