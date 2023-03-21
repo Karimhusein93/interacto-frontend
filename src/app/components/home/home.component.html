@@ -5,11 +5,11 @@
           (mouseenter)="startAnimation()"
           (mouseleave)="resetAnimation()">
           <img class="sign-recognition" src="assets/natural-language-recognition.jpg"/>
-          <div class="buttons">
-            <a class="home-button" mat-button routerLink="/sign-recognition" routerLinkActive="active">Sign recognition</a>
-            <a class="home-button" mat-button routerLink="/ocr-bills" routerLinkActive="active">OCR bills</a>
-          </div>
           <div class="overlay"></div>
         </div>
     </div>
+    <div class="buttons">
+        <a routerLink="/home/sign-recognition" class="home-button" mat-button  routerLinkActive="active">Sign recognition</a>
+        <a routerLink="/home/ocr-bills" class="home-button" mat-button  routerLinkActive="active">OCR bills</a>
+      </div>
   </div>

@@ -13,14 +13,9 @@ const routes: Routes = [
       import('./modules/shared/shared.module').then((m)=>m.SharedModule),
   },
   {
-    path: 'sign-recognition',
+    path: 'home',
     loadChildren: () =>
-      import('./modules/sign/sign.module').then((m)=>m.SignModule),
-  },
-  {
-    path: 'ocr-bills',
-    loadChildren: () =>
-      import('./modules/ocr/ocr.module').then((m)=>m.OcrModule),
+      import('./modules/home/home.module').then((m)=>m.HomeModule),
   },
 ];
 

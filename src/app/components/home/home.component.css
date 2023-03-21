@@ -38,6 +38,9 @@
   .sign-recognition-container:hover .overlay {
     opacity: 1;
   }
+  a{
+    text-decoration: none;
+  }
   
   /* Animation states */
   @keyframes zoom-in {
