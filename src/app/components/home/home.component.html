@@ -1,13 +1,15 @@
 <div class="container">
-        <div class="row">
-          <div class="col-md-4">
+    <div class="row">
+        <div class="sign-recognition-container"
+          [@imageAnimation]="imageState"
+          (mouseenter)="startAnimation()"
+          (mouseleave)="resetAnimation()">
           <img class="sign-recognition" src="assets/natural-language-recognition.jpg"/>
+          <div class="buttons">
+            <a class="home-button" mat-button routerLink="/sign-recognition" routerLinkActive="active">Sign recognition</a>
+            <a class="home-button" mat-button routerLink="/ocr-bills" routerLinkActive="active">OCR bills</a>
           </div>
-          <div class="col-md-4">
-
-          </div>
-          <div class="col-md-4">
-            <img class="ocr-bills" src="assets/ocr-bills.JPG"/>
-          </div>
+          <div class="overlay"></div>
         </div>
     </div>
+  </div>

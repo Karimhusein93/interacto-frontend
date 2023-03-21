@@ -11,9 +11,11 @@ import { MatButtonModule} from '@angular/material/button';
 import { SharedRoutingModule } from './shared-routing.module';
 import { MatGridListModule } from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms'; 
+import { AboutUsComponent } from 'src/app/components/shared/about-us/about-us.component';
+import { ContactUsComponent } from 'src/app/components/shared/contact-us/contact-us.component';
 
 @NgModule({
-  declarations: [FooterComponent,HeaderComponent],
+  declarations: [FooterComponent,HeaderComponent,AboutUsComponent,ContactUsComponent],
   imports: [
     CommonModule,
     HttpClientModule,
@@ -24,8 +26,8 @@ import { FormsModule } from '@angular/forms';
     MatToolbarModule,
     SharedRoutingModule,
     MatGridListModule,
-    FormsModule
+    FormsModule,
   ],
-  exports:[FooterComponent,HeaderComponent]
+  exports:[FooterComponent,HeaderComponent,AboutUsComponent,ContactUsComponent]
 })
 export class SharedModule { }
