@@ -35,6 +35,9 @@
   font-weight: bold;
   padding: 3%;
 }
+.home-button :hover{
+  opacity: 1;
+}
 
 .container:hover .overlay {
   opacity: 1;

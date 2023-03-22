@@ -1,4 +1,40 @@
 .container{
     width: 80%;
     margin: auto;
+    margin-bottom: 3%;
+}
+.submit-button {
+    background-color: #47d7ac;
+    color: #551A8B;
+    font-weight: 700;
+    width: 100px;
+  }
+  h1{
+    color:#551A8B ;
+}
+p{
+    color:#551A8B ; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    color:#551A8B ;
+}
+.card-footer{
+    display: flex;
+    flex-direction: row;
+}
+.card-footer>p{
+    margin-top: 0px;
+    margin-left: 4px;
+}
+.badge.bg-secondary{
+    color:#551A8B ; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+}
+form{
+    margin-bottom: 3%;
 }

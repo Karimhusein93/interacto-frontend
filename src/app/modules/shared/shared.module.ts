@@ -13,6 +13,16 @@ import { MatGridListModule } from '@angular/material/grid-list';
 import { FormsModule } from '@angular/forms'; 
 import { AboutUsComponent } from 'src/app/components/shared/about-us/about-us.component';
 import { ContactUsComponent } from 'src/app/components/shared/contact-us/contact-us.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatInputModule } from '@angular/material/input';
+import { MatSelectModule } from '@angular/material/select';
+import { MatCardModule } from '@angular/material/card';
+import { MatTabsModule } from '@angular/material/tabs';
+
+
+
+
 
 @NgModule({
   declarations: [FooterComponent,HeaderComponent,AboutUsComponent,ContactUsComponent],
@@ -27,6 +37,12 @@ import { ContactUsComponent } from 'src/app/components/shared/contact-us/contact
     SharedRoutingModule,
     MatGridListModule,
     FormsModule,
+    MatFormFieldModule,
+    ReactiveFormsModule,
+    MatInputModule,
+    MatSelectModule,
+    MatCardModule,
+    MatTabsModule
   ],
   exports:[FooterComponent,HeaderComponent,AboutUsComponent,ContactUsComponent]
 })

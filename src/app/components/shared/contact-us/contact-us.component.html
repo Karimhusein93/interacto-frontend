@@ -1,2 +1,167 @@
-<div class="container">
-</div>
+    <div class="container">
+        <div class="contact">
+            <h1>Contact us</h1>
+            <p>You can use our phone or our email address</p>
+        </div>
+        <div class="cards">
+          <a class="card" href="tel://0215392524">
+            <div class="card-title">
+              <h3>Call us</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                We will answer your phone calls between 9-17, from Monday till Friday.
+              </p>
+            </div>
+            <div class="card-footer">
+              <mat-icon> local_phone</mat-icon>
+              <p>021 539 2524</p>
+            </div>
+          </a>
+          <a class="card" href="mailto:customer@obsentum.com">
+            <div class="card-title">
+              <h3>Write us an email</h3>
+            </div>
+            <div class="card-body">
+              <p>
+                You can write to us an email whenever you want and we will make sure
+                you get an answer in 1 business day.
+              </p>
+            </div>
+            <div class="card-footer">
+              <mat-icon> mail_outline</mat-icon>
+              <p>customer@interacto.com</p>
+            </div>
+          </a>
+        </div>
+        <div class="py-3 d-flex align-items-center">
+          <hr class="flex-grow-1" />
+          <div class="badge bg-secondary">OR</div>
+          <hr class="flex-grow-1" />
+        </div>
+        <div class="form">
+          <p class="form-description">
+            Use the contact form below to send us a message.
+          </p>
+          <div class="card">
+            <form [formGroup]="form" (ngSubmit)="onSubmit(form)">
+                <mat-grid-list cols="1" rowHeight="60"
+                gutterSize="6px">
+                <mat-grid-tile>
+                <mat-form-field appearance="fill">
+                <mat-label>First Name</mat-label>
+                <input matInput
+                  type="text"
+                  class="form-control"
+                  id="firstName"
+                  name="firstName"
+                  required
+                  [ngClass]="{ 'is-invalid':submitted &&  f['firstName'].errors }"
+                  formControlName="firstName"
+                />
+                <div *ngIf="submitted && f['firstName'].errors" class="invalid-feedback">
+                  <div *ngIf="f['firstName'].errors['required']">First Name is required</div>
+                  <div *ngIf="f['firstName'].errors['minlength']">
+                    First Name must be at least 1 character
+                  </div>
+                  <div *ngIf="f['firstName'].errors['maxlength']">
+                    First Name must not exceed 30 characters
+                  </div>
+                </div>
+                </mat-form-field>
+            </mat-grid-tile>
+              <mat-grid-tile>
+                <mat-form-field appearance="fill">
+                <mat-label>Last Name</mat-label>
+                <input matInput
+                  type="text"
+                  class="form-control"
+                  id="lastName"
+                  name="lastName"
+                  required
+                  [ngClass]="{ 'is-invalid':submitted && f['lastName'].errors }"
+                  formControlName="lastName"
+                />
+                <div *ngIf="submitted && f['lastName'].errors" class="invalid-feedback">
+                  <div *ngIf="f['lastName'].errors['required']">Last Name is required</div>
+                  <div *ngIf="f['lastName'].errors['minlength']">
+                    Last Name must be at least 1 character
+                  </div>
+                  <div *ngIf="f['lastName'].errors['maxlength']">
+                    Last Name must not exceed 30 characters
+                  </div>
+                </div>
+            </mat-form-field>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <mat-form-field appearance="fill">
+                <mat-label>Email</mat-label>
+                <input matInput
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  required
+                  formControlName="email"
+                  [ngClass]="{ 'is-invalid':submitted &&  f['email'].errors }"
+                />
+                <div *ngIf="submitted && f['email'].errors" class="invalid-feedback">
+                  <div *ngIf="f['email'].errors['required']">Email is required</div>
+                  <div *ngIf="f['email'].errors['email']">Email is invalid</div>
+                </div>
+                </mat-form-field>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <mat-form-field appearance="fill">
+                <mat-label>Phone Number</mat-label>
+                <input matInput
+                  type="tel"
+                  class="form-control"
+                  id="phoneNumber"
+                  name="phoneNumber"
+                  required
+                  formControlName="phoneNumber"
+                  [ngClass]="{ 'is-invalid':submitted &&  f['phoneNumber'].errors }"
+                />
+                <div *ngIf="submitted && f['phoneNumber'].errors" class="invalid-feedback">
+                  <div *ngIf="f['phoneNumber'].errors['required']">Phone Number is required</div>
+                  <div *ngIf="f['phoneNumber'].errors['phoneNumber']">Phone Number is invalid</div>
+                </div>
+                </mat-form-field>
+              </mat-grid-tile>
+              <mat-grid-tile>
+                <mat-form-field appearance="fill">
+                <mat-label>Message</mat-label>
+                <textarea matInput
+                  class="form-control"
+                  id="message"
+                  name="message"
+                  required
+                  formControlName="message"
+                  [ngClass]="{ 'is-invalid':submitted &&  f['message'].errors }"
+                ></textarea>
+                <div *ngIf="submitted && f['message'].errors" class="invalid-feedback">
+                  <div *ngIf="f['message'].errors['required']">Message is required</div>
+                  <div *ngIf="f['message'].errors['minlength']">
+                    Message must be at least 10 characters
+                  </div>
+                  <div *ngIf="f['message'].errors['maxlength']">
+                    Message must not exceed 255 characters
+                  </div>
+                </div>
+                </mat-form-field>
+              </mat-grid-tile>
+              <mat-grid-tile>
+              <button mat-button class="submit-button"
+                type="submit"
+              >
+                Send
+              </button>
+            </mat-grid-tile>
+            </mat-grid-list>
+            
+          </form>
+              
+          </div>
+        </div>
+      </div>
