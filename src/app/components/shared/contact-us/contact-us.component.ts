@@ -7,11 +7,7 @@ import { AbstractControl, FormBuilder, FormControl, FormGroup, Validators } from
   styleUrls: ['./contact-us.component.css']
 })
 export class ContactUsComponent {
-  error: any = [];
-  success = null;
   submitted = false;
-  answerTypes: any = [];
-  inquireTypes: any = [];
   form: FormGroup = new FormGroup({
     firstName: new FormControl(''),
     lastName: new FormControl(''),
