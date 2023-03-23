@@ -11,6 +11,9 @@ h1{
 }
 a{
     text-decoration: none;
+    color: #551A8B;
+    font-weight: bolder;
+    font-size: larger;
 }
 .interacto-logo{
     width: 250px;
