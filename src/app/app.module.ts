@@ -7,7 +7,6 @@ import { OcrModule } from './modules/ocr/ocr.module';
 import { SharedModule } from './modules/shared/shared.module';
 import { SignModule } from './modules/sign/sign.module';
 
-
 @NgModule({
   declarations: [
     AppComponent,
