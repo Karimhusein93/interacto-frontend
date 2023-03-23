@@ -1,0 +1,21 @@
+.sign-description{
+  font-size: 26px;
+  margin: 8px;
+  color: #13294b;
+  margin: 24px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+.sign-image {
+  border: 3px solid #47d7ac;
+  background-color: #47d7ac;
+  border-radius: 8px;
+  margin: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}

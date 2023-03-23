@@ -6,6 +6,7 @@ import { HomeModule } from './modules/home/home.module';
 import { OcrModule } from './modules/ocr/ocr.module';
 import { SharedModule } from './modules/shared/shared.module';
 import { SignModule } from './modules/sign/sign.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { SignModule } from './modules/sign/sign.module';
     HomeModule,
     OcrModule,
     SharedModule,
-    SignModule
+    SignModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
