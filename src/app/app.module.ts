@@ -3,9 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeModule } from './modules/home/home.module';
-import { OcrModule } from './modules/ocr/ocr.module';
 import { SharedModule } from './modules/shared/shared.module';
-import { SignModule } from './modules/sign/sign.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
@@ -16,9 +15,8 @@ import { SignModule } from './modules/sign/sign.module';
     BrowserModule,
     AppRoutingModule,
     HomeModule,
-    OcrModule,
     SharedModule,
-    SignModule
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

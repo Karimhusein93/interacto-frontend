@@ -1,0 +1,12 @@
+.container{
+    width: 80%;
+    margin: auto;
+    height: 630px;
+}
+h1{
+    color:#551A8B ;
+}
+p{
+    color:#551A8B ; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

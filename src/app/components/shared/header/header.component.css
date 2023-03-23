@@ -5,3 +5,13 @@
 h1{
  margin-right: 2%;
 }
+.container{
+    width: 80%;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.interacto-logo{
+    width: 250px;
+}

@@ -1,1 +1,10 @@
-
+<div class="container"
+  [@imageAnimation]="imageState"
+  (mouseenter)="startAnimation()"
+  (mouseleave)="resetAnimation()">
+  <div class="buttons">
+    <a routerLink="/home/sign-recognition" class="home-button" mat-button routerLinkActive="active">Sign recognition</a>
+    <a routerLink="/home/ocr-bills" class="home-button" mat-button routerLinkActive="active">OCR bills</a>
+  </div>
+  <div class="overlay"></div>
+</div>
