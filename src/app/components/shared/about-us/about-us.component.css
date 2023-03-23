@@ -1,7 +1,7 @@
 .container{
     width: 80%;
     margin: auto;
-    height: 630px;
+    height: 100vh;
 }
 h1{
     color:#551A8B ;
