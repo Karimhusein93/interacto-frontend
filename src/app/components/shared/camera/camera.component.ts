@@ -34,5 +34,15 @@ export class CameraComponent  implements OnInit {
       this.image = this.canvas.toDataURL('image/png');
       console.log(this.image);
     }
-}
+    public stopVideoOnly(videoElem:any) {
+        const stream = videoElem.srcObject;
+        const tracks = stream.getTracks();
 
+        tracks.forEach((track:any) => {
+          track.stop();
+        });
+
+        videoElem.srcObject = null;
+      }
+
+    }

@@ -33,4 +33,12 @@ export class OcrComponent implements OnInit {
     this.image = this.canvas.toDataURL('image/png');
     console.log(this.image);
   }
+
+  public stopRecording(){
+    this.videoRef.getTracks().forEach(function(track: any) {
+      track.stop();
+      console.log("sadas");
+    });
+
+ }
 }
