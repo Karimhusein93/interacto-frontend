@@ -1,4 +1,30 @@
-.container{
-    width: 80%;
-    margin: auto;
+.sign-description {
+  font-size: 26px;
+  background-color: #13294b;
+  color: #47d7ac;
+  font-weight: bold;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+}
+
+.sign-letter {
+  border: 3px solid #47d7ac;
+  background-color: #47d7ac;
+  color: #13294b;
+  border-radius: 50px;
+  width: 50px;
+  height: 50px;
+  margin: 24px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
 }
